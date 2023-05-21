@@ -1,7 +1,7 @@
 import { Routes, Route } from "react-router-dom";
 import Home from "../pages/Home/Home";
-import ProductDes from "../pages/DecriptionProducts/productDes";
 import Header from "../components/home/header/Header";
+import ProductDes from "../pages/DecriptionProducts/ProductDes";
 
 const Router = () => {
   return (
