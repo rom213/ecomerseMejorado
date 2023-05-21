@@ -1,0 +1,109 @@
+.tarjetProduct{
+    position: relative;
+    width: 21vw;
+    height: 27vw;
+    border:1px solid rgb(87, 81, 81);
+    border-radius: 0.3rem;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.1vw;
+    cursor: pointer;
+    transition: 200ms;
+}
+
+.tarjetProduct:hover{
+    transform: scale(1.04);
+}
+.imgPoducct{
+    position: relative;
+    max-width: 15vw;
+    max-height: 15vw;
+}
+
+.contentImgProduct{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 60%;
+    border-bottom: 1px solid rgb(81, 20, 20);
+    overflow: hidden;
+    gap: 7rem;
+    transition: transform .5s;
+}
+
+.sec2{
+    width: 100%;
+    padding: 1rem;
+}
+
+.circleCar{
+    position: absolute;
+    background-color: rgb(237, 131, 131);
+    width: 4.5vw;
+    height: 4.5vw;
+    border-radius: 100%;
+    bottom: 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    right: 2vh;
+    font-size: 4vw;
+    cursor: pointer;
+    transition: 200ms;
+}
+
+.circleCar:hover{
+    transform: scale(1.09);
+}
+
+
+
+.contentPrice{
+    position: absolute;
+    bottom: 20px;
+}
+
+
+@media (max-width: 800px) {
+    .circleCar{
+        width: 8vw;
+        height: 8vw;
+    }
+
+    .tarjetProduct{
+        position: relative;
+        left: 6vw;
+        width: 37vw;
+        height: 45vw;
+        font-size: 1.6vw;
+    }
+    .imgPoducct{
+        max-width: 30vw;
+        max-height: 50vw;
+    }
+  }
+
+  @media (max-width: 500px) {
+    .circleCar{
+        width: 15vw;
+        height: 15vw;
+        font-size: 10vw;
+    }
+
+    .tarjetProduct{
+        position: relative;
+        left: 6vw;
+        width: 75vw;
+        height: 100vw;
+        font-size: 4vw;
+    }
+    .imgPoducct{
+        max-width: 60vw;
+        max-height: 50vw;
+    }
+  }
