@@ -1,9 +1,8 @@
 import './product.css';
-import { FC } from 'react';
+import { FC, MouseEvent } from 'react';
 import { Products } from "../../../interfases/products";
 import { addCartProducts, createCartProduct } from '../../../hooks/peticiones/cart.Peticiones';
 import { Globalstore } from '../../../secstore/Store_global';
-import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useQueryClient, useQuery } from '@tanstack/react-query';
 import { findOneProduct } from '../../../hooks/peticiones/products';
@@ -17,7 +16,7 @@ const Product: FC<Props> = ({ product }) => {
   const navigate = useNavigate();
   const queryClient = useQueryClient();
 
-  const addClick = async (event: React.MouseEvent<HTMLButtonElement>) => {
+  const addClick = async (event: MouseEvent<HTMLDivElement>) => {
     event.stopPropagation();
     const valueExistCar = carshopp?.filter((car) => car.productId === product.id);
     if (valueExistCar?.length === 0) {
@@ -53,7 +52,7 @@ const Product: FC<Props> = ({ product }) => {
         </div>
 
         <div className='contentPrice'>
-          <div>PRICÉ</div>
+          <div>PRICE</div>
           <span>${product.price}</span>
         </div>
       </div>
