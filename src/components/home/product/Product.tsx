@@ -48,7 +48,7 @@ const Product: FC<Props> = ({ product }) => {
           <div>{product.title}</div>
         </div>
 
-        <div onClick={()=>addClick} className='circleCar'>
+        <div onClick={addClick} className='circleCar'>
           <i className='bx bx-cart'></i>
         </div>
 

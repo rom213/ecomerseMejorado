@@ -94,7 +94,7 @@ const ProductDes = () => {
       </div>
 
       <div className="sec1">
-        <div>
+        <div className="contentSliderInfo">
           <div className="slider">
             <i
               onClick={() => {
