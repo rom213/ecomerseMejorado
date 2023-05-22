@@ -53,7 +53,7 @@ const Product: FC<Props> = ({ product }) => {
         </div>
 
         <div className='contentPrice'>
-          <div>PRICE</div>
+          <div>PRICÉ</div>
           <span>${product.price}</span>
         </div>
       </div>
